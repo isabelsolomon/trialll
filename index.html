@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profit calculator</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    
+
+    <div class="table">
+        <div>PRODUCT</div>
+        <div>FULLPACK</div>
+        <div>HALFPACK</div>
+        <div>QUARTERPACK</div>
+         <div ></div>
+
+        <div>COKE</div>
+        <div>4800</div>
+        <div>2400</div>
+        <div>1200</div>
+         <div></div>
+
+        <div>QUANTITY</div>
+        <input type="number" id="cokefullqty" oninput="calculateproduct('coke',4800,4400,2400,2200,1200,1100)">
+        <input type="number" id="cokehalfqty"  oninput="calculateproduct('coke',4800,4400,2400,2200,1200,1100)">
+        <input type="number" id="cokequarterqty"  oninput="calculateproduct('coke',4800,4400,2400,2200,1200,1100)">
+        <div id="cokeprofit">0</div>
+
+        <div>WATER</div>
+        <div>2200</div>
+        <div>1100</div>
+        <div>550</div>
+ <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="waterfullqty"  oninput="calculateproduct('water',2200,1950,1100,975,550,487.5)">
+        <input type="number" id="waterhalfqty"  oninput="calculateproduct('water',2200,1950,1100,975,550,487.5)">
+        <input type="number" id="waterquarterqty"  oninput="calculateproduct('water',2200,1950,1100,975,550,487.5)">
+ <div id="waterprofit">0</div>
+         <div>PEPSI</div>
+         <div>4400</div>
+        <div>2200</div>
+        <div>1100</div>
+ <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="pepsifullqty"  oninput="calculateproduct('pepsi',4400,4150,2200,2075,1100,1037.5)">
+        <input type="number" id="pepsihalfqty"  oninput="calculateproduct('pepsi',4400,4150,2200,2075,1100,1037.5)">
+        <input type="number" id="pepsiquarterqty"  oninput="calculateproduct('pepsi',4400,4150,2200,2075,1100,1037.5)">
+ <div id="pepsiprofit">0</div>
+
+         <div>FEARLESS</div>
+         <div>5200</div>
+        <div>2600</div>
+        <div>1300</div>
+ <div ></div>
+         <div>QUANTITY</div>
+         <input type="number" id="fearlessfullqty"  oninput="calculateproduct('fearless',5200,4800,2600,2400,1300,1200)">
+        <input type="number" id="fearlesshalfqty"  oninput="calculateproduct('fearless',5200,4800,2600,2400,1300,1200)">
+        <input type="number" id="fearlessquarterqty"  oninput="calculateproduct('fearless',5200,4800,2600,2400,1300,1200)">
+ <div id="fearlessprofit">0</div>
+         <div>PREDATOR</div>
+         <div>5400</div>
+        <div>2700</div>
+        <div>1350</div>
+         <div></div>
+         <div>QUANTITY</div>
+          <input type="number"id="predatorfullqty" oninput="calculateproduct('predator',5400,5000,2700,2500,1350,1250)">
+        <input type="number" id="predatorhalfqty" oninput="calculateproduct('predator',5400,5000,2700,2500,1350,1250)">
+        <input type="number" id="predatorquarterqty" oninput="calculateproduct('predator',5400,5000,2700,2500,1350,1250)">
+ <div id="predatorprofit">0</div>
+       
+
+         <div>MALTINA</div>
+        <div>5600</div>
+        <div>2800</div>
+        <div>1400</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="maltfullqty" oninput="calculateproduct('malt',5600,5300,2800,2650,1400,1325)">
+        <input type="number" id="malthalfqty" oninput="calculateproduct('malt',5600,5300,2800,2650,1400,1325)">
+        <input type="number" id="maltquarterqty" oninput="calculateproduct('malt',5600,5300,2800,2650,1400,1325)">
+ <div id="maltprofit">0</div>
+         <div>LACASERA</div>
+        <div>4300</div>
+        <div>2150</div>
+        <div>1075</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="lacaserafullqty" oninput="calculateproduct('lacasera',4300,4000,2150,2000,1075,1000)">
+        <input type="number" id="lacaserahalfqty" oninput="calculateproduct('lacasera',4300,4000,2150,2000,1075,1000)">
+        <input type="number" id="lacaseraquarterqty" oninput="calculateproduct('lacasera',4300,4000,2150,2000,1075,1000)">
+ <div id="lacaseraprofit">0</div>
+         <div>NUTRIMILK</div>
+        <div>6400</div>
+        <div>3200</div>
+        <div>1600</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="nutrifullqty" oninput="calculateproduct('nutri',6400,5500,3200,2750,1600,1375)">
+        <input type="number" id="nutrihalfqty" oninput="calculateproduct('nutri',6400,5500,3200,2750,1600,1375)">
+        <input type="number" id="nutriquarterqty" oninput="calculateproduct('nutri',6400,5500,3200,2750,1600,1375)">
+ <div id="nutriprofit">0</div>
+         <div>PEACH</div>
+        <div>6200</div>
+        <div>3100</div>
+        <div>1550</div>
+ <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="peachfullqty" oninput="calculateproduct('peach',6200,5600,3100,2800,1550,1400)">
+        <input type="number" id="peachhalfqty" oninput="calculateproduct('peach',6200,5600,3100,2800,1550,1400)">
+        <input type="number" id="peachquarterqty" oninput="calculateproduct('peach',6200,5600,3100,2800,1550,1400)">
+ <div id="peachprofit">0</div>
+         <div>CRATE</div>
+        <div>6400</div>
+        <div>3200</div>
+        <div>1600</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="cratefullqty" oninput="calculateproduct('crate',6400,6100,3200,3050,1600,1525)">
+        <input type="number" id="cratehalfqty" oninput="calculateproduct('crate',6400,6100,3200,3050,1600,1525)">
+        <input type="number" id="cratequarterqty" oninput="calculateproduct('crate',6400,6100,3200,3050,1600,1525)">
+ <div id="crateprofit">0</div>
+         <div>DUDU</div>
+         <div>7600</div>
+        <div>3800</div>
+        <div>1900</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="dudufullqty" oninput="calculateproduct('dudu',7600,7300,3800,3650,1900,1825)">
+        <input type="number" id="duduhalfqty" oninput="calculateproduct('dudu',7600,7300,3800,3650,1900,1825)">
+        <input type="number" id="duduquarterqty" oninput="calculateproduct('dudu',7600,7300,3800,3650,1900,1825)">
+ <div id="duduprofit">0</div>
+         <div>FRESHYO</div>
+         <div>6600</div>
+        <div>3300</div>
+        <div>1650</div>
+ <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="freshfullqty" oninput="calculateproduct('fresh',6600,5900,3300,2950,1650,1475)">
+        <input type="number" id="freshhalfqty" oninput="calculateproduct('fresh',6600,5900,3300,2950,1650,1475)">
+        <input type="number" id="freshquarterqty" oninput="calculateproduct('fresh',6600,5900,3300,2950,1650,1475)">
+ <div id="freshprofit"></div>
+         <div>MRFRUIT</div>
+         <div>5800</div>
+        <div>2900</div>
+        <div>1450</div>
+ <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="fruitfullqty" oninput="calculateproduct('fruit ',5800,5500,2900,2750,1450,1375)">
+        <input type="number" id="fruithalfqty" oninput="calculateproduct('fruit',5800,5500,2900,2750,1450,1375)">
+        <input type="number" id="fruitquarterqty" oninput="calculateproduct('fruit',5800,5500,2900,2750,1450,1375)">
+ <div id="fruitprofit">0</div>
+         <div>CHOCO</div>
+         <div>8700</div>
+        <div>4350</div>
+        <div>2175</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="cfullqty" oninput="calculateproduct('c',8700,8200,4350,4100,2175,2050)">
+        <input type="number" id="chalfqty" oninput="calculateproduct('c',8700,8200,4350,4100,2175,2050)">
+        <input type="number" id="cquarterqty" oninput="calculateproduct('c',8700,8200,4350,4100,2175,2050)">
+ <div id="cprofit">0</div>
+         <div>SOLO</div>
+         <div>3400</div>
+        <div>1700</div>
+        <div>850</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="sfullqty" oninput="calculateproduct('s',3400,3000,1700,1500,850,750)">
+        <input type="number" id="shalfqty" oninput="calculateproduct('s',3400,3000,1700,1500,850,750)">
+        <input type="number" id="squarterqty" oninput="calculateproduct('s',3400,3000,1700,1500,850,750)">
+ <div id="sprofit">0</div>
+         <div>SM PEPSI</div>
+        <div>2900</div>
+        <div>1450</div>
+        <div>725</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="spfullqty" oninput="calculateproduct('sp',2900,2600,1450,1300,725,650)">
+        <input type="number" id="sphalfqty" oninput="calculateproduct('sp',2900,2600,1450,1300,725,650)">
+        <input type="number" id="spquarterqty" oninput="calculateproduct('sp',2900,2600,1450,1300,725,650)">
+ <div id="spprofit">0</div>
+         <div>MACA</div>
+         <div>5000</div>
+        <div>2500</div>
+        <div>1250</div>
+         <div></div>
+         <div>QUANTITY</div>
+
+        <input type="number" id="mfullqty" oninput="calculateproduct('m',5000,4500,2500,2250,1250,1125)">
+        <input type="number" id="mhalfqty" oninput="calculateproduct('m',5000,4500,2500,2250,1250,1125)">
+        <input type="number" id="mquarterqty" oninput="calculateproduct('m',5000,4500,2500,2250,1250,1125)">
+ <div id="mprofit">0</div>
+         <div>ZERO</div>
+         <div>3600</div>
+        <div>1800</div>
+        <div>900</div>
+         <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="zfullqty" oninput="calculateproduct('z',3600,3200,1800,1600,900,800)">
+        <input type="number" id="zhalfqty" oninput="calculateproduct('z',3600,3200,1800,1600,900,800)">
+        <input type="number" id="zquarterqty" oninput="calculateproduct('z',3600,3200,1800,1600,900,800)">
+ <div id="zprofit">0</div>
+         <div>MANGO</div>
+        <div>4000</div>
+        <div>2000</div>
+        <div>1000 </div>
+ <div></div>
+         <div>QUANTITY</div>
+        <input type="number" id="mafullqty" oninput="calculateproduct('ma',4000,3400,2000,1700,1000,850)">
+        <input type="number" id="mahalfqty" oninput="calculateproduct('ma',4000,3400,2000,1700,1000,850)">
+        <input type="number" id="maquarterqty" oninput="calculateproduct('ma',4000,3400,2000,1700,1000,850)">
+ <div id="maprofit">0</div>
+    </div>
+    
+
+     <h2>Grandtotal: <span id="grandtotal">0</span></h2>
+     <button onclick="clearinputs()">clear inputs</button>
+     <button onclick="saverecord()">save record</button>
+     <button onclick="clearrecords()">delete records</button>
+     <h2>Total Saved Profit: <span id="savedtotal">0</span></h2>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
